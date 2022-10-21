@@ -1,6 +1,6 @@
 # How to write a quester
 
-A quester is an object that defines quest.
+A quester is an object that defines quests.
 Each quest definition includes information for how the quest can be done.
 
 ## Basic structure
@@ -54,7 +54,7 @@ end)
 ### Profiles/02. Questing/Questing.lua
 
 ```
-GMR.LoadQuester('World Quests')
+GMR.LoadQuester('Quester')
 ```
 
 ## The APIs in more depth
