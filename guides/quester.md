@@ -113,6 +113,40 @@ This is done via the functions that can be found in the `GMR.Questing` namespace
 
 They can be listed with `/dump GMR.Questing`.
 
+__Some of the functions:__
+
+* GMR.Questing.KillEnemy(x, y, z, objectID)
+* GMR.Questing.InteractWith(x, y, z, objectID)
+* GMR.Questing.IsObjectiveCompleted(questID, objectiveIndex)
+* GMR.Questing.UseItemOnPosition(x, y, z, itemID, distance)
+
 ### GMR.LoadQuester
 
 This function loads the quester as "active" quester. The first argument is the quest name, as passed to `GMR.DefineQuester` as first argument.
+
+## Gathering the information for GMR.DefineQuest
+
+### Finding out object IDs and positions
+
+With the character, go close to the object.
+
+With the following function you can find the object in the object list.
+You can put this function into a file in the `Plugins` folder.
+
+```lua
+function findObjectsByName(name)
+    local objectsThatMatch = {}
+    local objects = GMR.GetNearbyObjects(100)
+    for guid, object in pairs(objects) do
+        if object.Name == name then
+            table.insert(objectsThatMatch, object)
+        end
+    end
+    return objectsThatMatch
+end
+```
+
+You can call it with `/dump findObjectsByName('<name of object>')`.
+
+The object name can usually be found out by hovering with the mouse over the object.
+It might be displayed in the first line of the tooltip then.
