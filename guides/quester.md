@@ -120,6 +120,52 @@ __Some of the functions:__
 * GMR.Questing.IsObjectiveCompleted(questID, objectiveIndex)
 * GMR.Questing.UseItemOnPosition(x, y, z, itemID, distance)
 
+#### What can be done in the function passed as fourteenth argument
+
+##### Grinding some mobs as part of the quest
+
+```lua
+local questID = 123
+GMR.DefineQuest(
+    { 'Alliance', 'Horde' },
+    nil,
+    questID,
+    '<quest name>',
+    'Custom',
+    nil,
+    nil,
+    nil,
+    nil,
+    nil,
+    nil,
+    nil,
+    nil,
+    {
+        function()
+            if not GMR.Questing.IsObjectiveCompleted(questID, 1) then
+                GMR.SetQuestingState('Idle')
+            end
+        end
+    },
+    function()
+       
+        GMR.DefineProfileCenter(
+            -1551.3829345703,
+            7426.8286132812,
+            3999.8666992188
+        )
+        GMR.DefineQuestEnemyId(166206)
+        GMR.DefineSetting('Disable', 'AvoidWater')
+        GMR.DefineSetting('Enable', 'Grinding')
+    end
+)
+```
+
+##### Other things
+
+* `GMR.SkipTurnIn(true)` (i.e. for world quests)
+* `GMR.DefineSetting('Disable', 'AvoidWater')`. The first argument can be `'Enable'` or 'Disable'`. The second argument a string for one of the settings that can be found in the GUI. A way to find out the setting might be to use `/fstack` and hover over the setting element in the GUI. The GUI element name might hint on the name for the setting.
+
 ### GMR.LoadQuester
 
 This function loads the quester as "active" quester. The first argument is the quest name, as passed to `GMR.DefineQuester` as first argument.
