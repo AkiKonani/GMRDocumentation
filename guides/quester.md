@@ -148,7 +148,6 @@ GMR.DefineQuest(
         end
     },
     function()
-       
         GMR.DefineProfileCenter(
             -1551.3829345703,
             7426.8286132812,
