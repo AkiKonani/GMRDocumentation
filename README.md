@@ -2,6 +2,7 @@
 
 ## Guides
 
+* [Development environment](guides/development-environment.md)
 * [How to write a quester](guides/quester.md)
 * [Tips](guides/tips.md)
 
