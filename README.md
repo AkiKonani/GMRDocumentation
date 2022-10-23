@@ -3,6 +3,7 @@
 ## Guides
 
 * [Development environment](guides/development-environment.md)
+* [Lua](guides/lua.md)
 * [How to write a quester](guides/quester.md)
 * [Tips](guides/tips.md)
 
