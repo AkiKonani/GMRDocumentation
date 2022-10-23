@@ -163,7 +163,7 @@ GMR.DefineQuest(
 ##### Other things
 
 * `GMR.SkipTurnIn(true)` (i.e. for world quests)
-* `GMR.DefineSetting('Disable', 'AvoidWater')`. The first argument can be `'Enable'` or 'Disable'`. The second argument a string for one of the settings that can be found in the GUI. A way to find out the setting might be to use `/fstack` and hover over the setting element in the GUI. The GUI element name might hint on the name for the setting.
+* `GMR.DefineSetting('Disable', 'AvoidWater')`. The first argument can be `'Enable'` or `'Disable'`. The second argument a string for one of the settings that can be found in the GUI. A way to find out the setting might be to use `/fstack` and hover over the setting element in the GUI. The GUI element name might hint on the name for the setting.
 
 ### GMR.LoadQuester
 
