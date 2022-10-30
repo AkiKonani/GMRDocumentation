@@ -117,6 +117,7 @@ __Some of the functions:__
 
 * GMR.Questing.KillEnemy(x, y, z, objectID)
 * GMR.Questing.InteractWith(x, y, z, objectID)
+* GMR.Questing.GossipWith(x, y, z, objectID, delay, maximumDistance, gossipOptionID)
 * GMR.Questing.IsObjectiveCompleted(questID, objectiveIndex)
 * GMR.Questing.UseItemOnPosition(x, y, z, itemID, distance)
 
