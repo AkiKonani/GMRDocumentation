@@ -78,8 +78,8 @@ The third argument is the quest id.
 
 The fourth argument is the quest name.
 
-The fifth argument is the GMR quest type. With the value `Custom` one can define custom quest fulfillment logic.
-Another possible value is `Grinding`.
+The fifth argument is the GMR quest type ("Custom", "MassPickUp", "MassTurnIn", "Grinding" and maybe more).
+With the value `Custom` one can define custom quest fulfillment logic.
 
 The sixth argument is the quest pick up X coordinate. Can also be set to `nil` if no pick up is required.
 
