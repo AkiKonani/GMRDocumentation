@@ -4,6 +4,7 @@
 
 * [Development environment](guides/development-environment.md)
 * [Lua](guides/lua.md)
+* [Accessing HWT APIs](guides/accessing-hwt-apis.md)
 * [How to write a quester](guides/quester.md)
 * [Tips](guides/tips.md)
 
