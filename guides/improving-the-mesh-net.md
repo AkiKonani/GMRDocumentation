@@ -58,3 +58,7 @@ Step 3 and 4:
 Step 5:
 
 ![Step 5](images/improving-the-mesh/WoWScrnShot_111822_165855.jpg)
+
+### Removing a connection
+
+The connection with the closest `from` or `to` point, which is highlighted in a brighter blue, can be removed with `/script removeClosestOffMeshConnection()`.
