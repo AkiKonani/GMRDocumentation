@@ -9,5 +9,5 @@
 * [Tips](guides/tips.md)
 * [Improving the mesh net (improving pathfinding)](guides/improving-the-mesh-net.md)
 
-Additionally some plugins and profiles can be found in the repo [GMRPluginsAndProfiles
-](https://github.com/AkiKonani/GMRPluginsAndProfiles) which can also serve as examples.
+Additionally some plugins and profiles can be found in the repo [GMRAddOns
+](https://github.com/AkiKonani/GMRAddOns) which can also serve as examples.
