@@ -5,8 +5,8 @@ Each quest definition includes information for how the quest can be done.
 
 ## Basic structure
 
-* Create a LUA file `<questerName>.lua` (i.e. `Quester.lua`) for the quester in the `Plugins` folder.
-* Create a LUA file `<profileName>.lua` (i.e. `Questing.lua`) for the profile in the `Profiles/02. Questing` folder.
+* Create a Lua file `<questerName>.lua` (i.e. `Quester.lua`) for the quester in the `Plugins` folder.
+* Create a Lua file `<profileName>.lua` (i.e. `Questing.lua`) for the profile in the `Profiles/02. Questing` folder.
 
 ### Plugins/Quester.lua
 
