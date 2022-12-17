@@ -96,10 +96,13 @@ The eleventh argument is the quest turn in Y coordinate. Can also be set to `nil
 
 The twelfth argument is the quest turn in Z coordinate. Can also be set to `nil` if no turn in is required.
 
-The thirteenth argument can be used to define the custom quest logic when the GMR quest type is 'Custom'.
+The thirteenth argument is the quest turn in object ID. 
+Can also be set to `nil` if no turn in is required.
+
+The fourteenth argument can be used to define the custom quest logic when the GMR quest type is 'Custom'.
 It is called regularly with GMR. It seems required to pass a table with a function as argument (see code example above).
 
-The fourteenth argument can be used to set profile settings for the quest.
+The fifteenth argument can be used to set profile settings for the quest.
 
 #### Custom questing logic
 
