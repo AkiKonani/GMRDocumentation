@@ -53,7 +53,7 @@ end)
 
 ### Profiles/02. Questing/Questing.lua
 
-```
+```lua
 GMR.LoadQuester('Quester')
 ```
 
