@@ -41,7 +41,6 @@ function Quester.defineQuestA()
         },
         function()
             print('setting profile settings')
-            
         end
     )
 end
